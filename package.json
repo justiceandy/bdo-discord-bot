@@ -1,0 +1,14 @@
+{
+  "name": "ihau-discord",
+  "version": "1.0.0",
+  "description": "discord api access to ihau bdo timers",
+  "main": "index.js",
+  "scripts": {
+    "test": "timers.js -t"
+  },
+  "author": "justiceandy",
+  "license": "ISC",
+  "dependencies": {
+    "discord.io": "^2.2.4"
+  }
+}
