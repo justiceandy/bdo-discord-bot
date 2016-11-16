@@ -1,6 +1,11 @@
 var player = require('play-sound')(opts = {})
 var Promise = require('bluebird');
 
+/*
+  Module Handles Playing Sound Notifications for Spawns
+*/
+
+// Trigger Boss Audio Notification
 exports.bossAudioNotification = function(boss){
   return new Promise(function(resolve, reject) {
     // Run Notification Sound
@@ -16,7 +21,7 @@ exports.bossAudioNotification = function(boss){
   });
 }
 
-
+// Promise Wrapper for Boss Sound MP3 File
 exports.playBossSound = function(boss){
   return new Promise(function(resolve, reject) {
       var audio = player.play('./mp3/'+boss+'.mp3', function(err){

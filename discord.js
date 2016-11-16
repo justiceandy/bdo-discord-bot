@@ -3,10 +3,10 @@ var Discord = require('discord.io');
 // Load Environment Variables [.env.json] for Tokens
 require('dot-env');
 
-// Import Channels, Boss Info, Discord Setup, Commands
-var channels = require('./data/channels.json');
-var bosses = require('./data/bosses.json');
-var commands = require('./data/commands.json');
+// Import Json Files for Channels, Boss Info, Discord Setup, Commands
+var channels = require('./data/json/channels.json');
+var bosses = require('./data/json/bosses.json');
+var commands = require('./data/json/commands.json');
 
 // Authenticate Client
 var bot = new Discord.Client({
